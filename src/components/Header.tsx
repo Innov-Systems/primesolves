@@ -21,7 +21,7 @@ export function Header() {
   return (
     <header className={s.header}>
       <div className={`${s.container} ${s.headerInner}`}>
-        <Brand />
+        <Brand showIcon />
         <button
           ref={toggle}
           className={s.menuToggle}

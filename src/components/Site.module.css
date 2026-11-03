@@ -50,12 +50,16 @@
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 5px;
   font-family: var(--font-heading);
   font-size: 27px;
   font-weight: 800;
   letter-spacing: -1.5px;
   line-height: 1.2;
   flex-shrink: 0;
+}
+.brandIcon {
+  color: var(--cyan);
 }
 .brandLight {
   font-weight: 450;

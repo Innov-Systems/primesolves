@@ -1,7 +1,8 @@
 import Image from "next/image";
+import { Box } from "lucide-react";
 import { site } from "@/config/site";
 import s from "./Site.module.css";
-export function Brand() {
+export function Brand({ showIcon = false }: { showIcon?: boolean }) {
   return (
     <a href="#inicio" className={s.brand} aria-label="Prime Solves — início">
       {site.logo ? (
@@ -13,10 +14,20 @@ export function Brand() {
           priority
         />
       ) : (
-        <span>
-          prime<span className={s.brandLight}>solves</span>
-          <span className={s.brandDot}>.</span>
-        </span>
+        <>
+          {showIcon && (
+            <Box
+              className={s.brandIcon}
+              size={30}
+              strokeWidth={1.6}
+              aria-hidden="true"
+            />
+          )}
+          <span>
+            Prime<span className={s.brandLight}>Solves</span>
+            <span className={s.brandDot}>.</span>
+          </span>
+        </>
       )}
     </a>
   );
