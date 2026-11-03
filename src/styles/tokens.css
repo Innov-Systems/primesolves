@@ -1,0 +1,19 @@
+:root {
+  --navy: #071426;
+  --blue: #087bde;
+  --vibrant: #168bff;
+  --cyan: #39b9ff;
+  --white: #fff;
+  --light: #f5f7fb;
+  --ink: #172033;
+  --muted: #607087;
+  --line: #e3e9f1;
+  --radius: 16px;
+  --space: clamp(64px, 8vw, 112px);
+  --container: 1200px;
+}
+
+body {
+  --font-body: var(--font-inter), sans-serif;
+  --font-heading: var(--font-manrope), sans-serif;
+}
